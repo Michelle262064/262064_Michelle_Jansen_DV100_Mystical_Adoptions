@@ -1,120 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE-edge">
       <meta name="author" content="Michelle Jansen 262064">
 
-    <title>The Mythos Cradle</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-
-  </head>
+      <title>The Mythos Cradle</title>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="../assets/fonts/mythology_of_egypt/Mythology Of Egypt.ttf">
+   </head>
   
-  <body>
-    <!--Navigation-->
-    <nav class="navbar">
-       <div class="nav-container">
-          <ul class="nav-links">
-           <li>
-              <img src="assets/images/logo.png" class="nav-logo"></img>
-           </li>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="pages/about.html">Adopt</a></li>
-           <ul><a href="pages/contact.html">Contact Us</a></ul>
-         </ul>
-        </div>
-    </nav>
+   <body>
+     <header>
+        <!--Navigation-->
+        <div class="navbar">
+         <a href="index.html" class="logo">
+           <img src="assets/images/logo.png" alt="Mythos Logo">
+         </a>
+         <nav class="nav-links">
+           <a href="index.html">Home</a>
+           <a href="pages/about.html">Adopt</a>
+           <a href="pages/contact.html">Contact Us</a>
+         </nav>
+         <div class="search-cart">
+           <input type="text" placeholder="Search" />
+             <div class="cart-icon">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                  <path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
+               </svg>
+             </div>
+             <span class="cart-amount">0</span>
+         </div>
+       </div>
+     </header>
 
     <!--Hero Banner-->
-     <section id="home" class="hero">
-       <div class="hero-content">
-          <h1>The Mythos Cradle</h1>
-          <p>Where legends become loved ones</p>  
-       </div>
+     <section class="hero">
+         <div class="hero-content">
+           <h1>Welcome to The Mythos Cradle</h1>
+           <p>Where legends become loved ones</p>  
+         </div>
      </section>
 
     <!--Slider Section-->
-     <section id="about" class="slider-section">
-       <div class="slider-container">
-          <div class="image-placeholder"></div>
-          <img src="assets/images/imageSlider1.png" alt="Image Slider">
-          <div class="text-right">
-            <p>BEGIN YOUR JOURNEY</p>
+     <section id="about" class="feature-dark">
+       <div class="container split">
+          <div class="image-box">
+             <img src="assets/images/imageSlider1.png" alt="Image Slider">
+          </div>
+          <div class="text-box">
+            <p class="label">BEGIN YOUR JOURNEY</p>
             <h2>Tiny Legends</h2>
             <h2>Big Hearts</h2>
             <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p>
-            <button type="button">Cradle a legend</button>
+            <button type="btn-primary">Cradle a legend</button>
           </div>
        </div>
      </section>
      <!--Info Section-->
      <section class="info-section">
-        <div class="text-left">
-          <p>THE CRADLE</p>
-          <h2>A Sanctuary Where Mythical</h2>
-          <h2>Creatures Find Families</h2>
-          <p>Discover our carefully nurtured mythical creatures, each ready to join a loving family. Experience the joy and wonder of forming a long lasting bond, as every adoption is guided with care, ensuring a safe, ethical, adn heartwarming journey for both creature and caretaker.</p>
-       </div>
-       <img src="assets/images/homeImg1.png" alt="Creature">
-     </section>
+           <div class="container split reverse">
+             <div class="image-box">
+               <img src="assets/images/homeImg1.png" alt="Mythical Sanctuary">
+             </div>
+             <div class="text-box">
+                <p class="label">THE CRADLE</p>
+                <h2>A Sanctuary Where Mythical</h2>
+                <h2>Creatures Find Families</h2>
+                <p>Discover our carefully nurtured mythical creatures, each ready to join a loving family. Experience the joy and wonder of forming a long lasting bond, as every adoption is guided with care, ensuring a safe, ethical, adn heartwarming journey for both creature and caretaker.</p>
+             </div>
+           </div>
+       </section>
    <!--Creature Cards-->
-     <section class="cards-section">
-       <p>LOOKING IN ON PAST FRIENDS</p>
+     <section class="cards-section container">
+       <p class"label">LOOKING IN ON PAST FRIENDS</p>
        <h3>FROM CRADLE TO FAMILY: A</h3>
        <h3>LEGEND AT HOME</h3>
-       <div class="card-grid">
-         <div class="card"><h3>Percy</h3></div>
-         <div class="card"><h3>Atlas</h3></div>
-         <div class="card"><h3>Unicorn</h3></div>
-         <div class="card"><h3>Hydra</h3></div>
-       </div>
        <div class="text-footer-container">
-          <h4>Percy's Quiet Winter Days</h4>
-          <p>Explore red deserts, ancient relics, and a once shy in the cold- Percy, who now explores snowy peaks wrapped in warmth, curiosity and family love.</p>
+          <div class="card">
            <img src="assets/images/successImg1.png" alt="Percy" class="adopted-creatures">
-          <h4>Ripple's Gentle River Home</h4>
-          <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who care and treasure them.</p>
+           <h4>Percy's Quiet Winter Days</h4>
+           <p>Explore red deserts, ancient relics, and a once shy in the cold- Percy, who now explores snowy peaks wrapped in warmth, curiosity and family love.</p>
+          </div>
+          <div class="card">
            <img src="assets/images/successImg2.png" alt="Ripple" class="adopted-creatures">
-          <h4>Atlas Learns to Trust</h4>
-          <p>Brave little Atlas grows stronger each day, learning to trust and in a courage filled home with patience.</p>
+           <h4>Ripple's Gentle River Home</h4>
+           <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who care and treasure them.</p>
+          </div>
+          <div class="card">
            <img src="assets/images/successImg3.png" alt="Atlas" class="adopted-creatures">
-          <h4>Skye's First Open Skies</h4>
-          <p>Skye's wings have stretched freely at last, soaring happily above a home where wonder is always welcome and curiosity is always a factor.</p>
+           <h4>Atlas Learns to Trust</h4>
+           <p>Brave little Atlas grows stronger each day, learning to trust and in a courage filled home with patience.</p>
+          </div>
+          <div class="card">
            <img src="assets/images/successImg4.png" alt="Skye" class="adopted-creatures">
+           <h4>Skye's First Open Skies</h4>
+           <p>Skye's wings have stretched freely at last, soaring happily above a home where wonder is always welcome and curiosity is always a factor.</p>
+          </div>
         </div>
-        <button>Cradle a Legend</button>
+        <button class="btn-primary">Cradle a Legend</button>
      </section>
      <!-- Footer -->
       <footer>
-          <div class="footer-left">
-             <img src="assets/images/logo.png" alt="Logo">
-             <p>Where every legendary creature finds a loving home.</p>
-             <span>All Rights Reserved &Open Window 2024</span>
+           <div class="container-split">
+              <div class="footer-left">
+               <img src="assets/images/logo.png" alt="Logo">
+               <p>Where every legendary creature finds a loving home.</p>
+               <span>All Rights Reserved &Open Window 2024</span>
+              </div>
            </div>
            <div class="footer-mid">
                <h5>Company</h5>
-               <a href="#"index.html>Home</a>
-               <a href="#"about.html>Adopt</a>
-               <a href="#"contact.html>Contact Us</a>
+               <a href="index.html">Home</a>
+               <a href="pages/about.html">Adopt</a>
+               <a href="pages/contact.html">Contact Us</a>
              </div>
              <div class="footer-right">
                  <h6>Social Media Links</h6>
-                 <class="social-container">
-                     <a href="https://www.facebook.com/theopenwindow/posts/on-friday-the-27th-of-february-open-window-stellenbosch-headed-into-the-city-for/1223841959923984/" target="_none">
+                 <div class="social-container">
+                     <a href="https://www.facebook.com/theopenwindow/" target="_blank">
                        <img src="assets/images/sm1.png" alt="Facebook" class="social-icon">
                      </a>
-                     <a href="https://www.facebook.com/theopenwindow/posts/on-friday-the-27th-of-february-open-window-stellenbosch-headed-into-the-city-for/1223841959923984/" target="_none">
+                     <a href="https://x.com/open_window_" target="_blank">
                        <img src="assets/images/sm4.png" alt="Twitter" class="social-icon">
                      </a>
-                     <a href="https://www.instagram.com/openwindowinstitute/?hl=en" target="_none">
+                     <a href="https://www.instagram.com/openwindowinstitute/" target="_blank">
                        <img src="assets/images/sm3.png" alt="Instagram" class="social-icons">
                      </a>
-                     <a href="https://www.tiktok.com/@open_window_" target="_none">
+                     <a href="https://www.tiktok.com/@open_window_" target="_blank">
                        <img src="assets/images/sm2.png" alt="Tiktok" class="social-icon">
                      </a>
-                   </class>
+                   </div>
                </div>
        </footer>
     </body>
