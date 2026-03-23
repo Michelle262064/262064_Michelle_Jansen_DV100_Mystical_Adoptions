@@ -5,15 +5,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE-edge">
       <meta name="author" content="Michelle Jansen 262064">
+
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      
       <title>The Mythos Cradle</title>
+
       <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="../assets/fonts/mythology_of_egypt/Mythology Of Egypt.ttf">
+      <link rel="local-font" href="../assets/fonts/mythology_of_egypt/Mythology Of Egypt.ttf">
    </head>
   
-   <body>
+   <body class="home-page">
      <header>
         <!--Navigation-->
         <div class="navbar">
@@ -35,7 +43,7 @@
        </div>
      </header>
 
-    <!--Hero Banner-->
+     <!--Hero Banner-->
      <section class="hero">
          <div class="text-wrapper">
            <h1>The Mythos Cradle</h1>
@@ -43,20 +51,32 @@
          </div>
      </section>
 
-    <!--Slider Section-->
+     <!--Slider Section-->
      <section id="about" class="feature-dark">
        <div class="container split">
-          <div class="image-box">
-             <img src="assets/images/imageSlider1.png" alt="Image Slider">
+           <div id="carouselExample" class="carousel slide">
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <img src="assets/images/imageSlider1.png" class="d-block w-100" alt="...">
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+           </div>
+         </div>
+           <div class="content-column">
+              <p class="label">BEGIN YOUR JOURNEY</p>
+              <h2>Tiny Legends</h2>
+              <h2>Big Hearts</h2>
+              <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p>
+              <button type="btn-primary">Cradle a legend</button>
           </div>
-          <div class="text-box">
-            <p class="label">BEGIN YOUR JOURNEY</p>
-            <h2>Tiny Legends</h2>
-            <h2>Big Hearts</h2>
-            <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p>
-            <button type="btn-primary">Cradle a legend</button>
-          </div>
-       </div>
      </section>
      <!--Info Section-->
      <section class="info-section">
@@ -72,37 +92,37 @@
              </div>
            </div>
        </section>
-   <!--Creature Cards-->
-     <section class="cards-section container">
-       <p class"label">LOOKING IN ON PAST FRIENDS</p>
-       <h3>FROM CRADLE TO FAMILY: A</h3>
-       <h3>LEGEND AT HOME</h3>
-       <div class="text-footer-container">
-          <div class="card">
-           <img src="assets/images/successImg1.png" alt="Percy" class="adopted-creatures">
-           <h4>Percy's Quiet Winter Days</h4>
-           <p>Explore red deserts, ancient relics, and a once shy in the cold- Percy, who now explores snowy peaks wrapped in warmth, curiosity and family love.</p>
-          </div>
-          <div class="card">
-           <img src="assets/images/successImg2.png" alt="Ripple" class="adopted-creatures">
-           <h4>Ripple's Gentle River Home</h4>
-           <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who care and treasure them.</p>
-          </div>
-          <div class="card">
-           <img src="assets/images/successImg3.png" alt="Atlas" class="adopted-creatures">
-           <h4>Atlas Learns to Trust</h4>
-           <p>Brave little Atlas grows stronger each day, learning to trust and in a courage filled home with patience.</p>
-          </div>
-          <div class="card">
-           <img src="assets/images/successImg4.png" alt="Skye" class="adopted-creatures">
-           <h4>Skye's First Open Skies</h4>
-           <p>Skye's wings have stretched freely at last, soaring happily above a home where wonder is always welcome and curiosity is always a factor.</p>
-          </div>
-        </div>
-        <button class="btn-primary">Cradle a Legend</button>
-     </section>
-     <!-- Footer -->
-      <footer>
+       <!--Creature Cards-->
+       <section class="cards-section container">
+         <p class"label">LOOKING IN ON PAST FRIENDS</p>
+         <h3>FROM CRADLE TO FAMILY: A</h3>
+         <h3>LEGEND AT HOME</h3>
+         <div class="text-footer-container">
+           <div class="card">
+             <img src="assets/images/successImg1.png" alt="Percy" class="adopted-creatures">
+             <h4>Percy's Quiet Winter Days</h4>
+             <p>Explore red deserts, ancient relics, and a once shy in the cold- Percy, who now explores snowy peaks wrapped in warmth, curiosity and family love.</p>
+           </div>
+           <div class="card">
+              <img src="assets/images/successImg2.png" alt="Ripple" class="adopted-creatures">
+              <h4>Ripple's Gentle River Home</h4>
+              <p>Gentle Ripple has found peace along flowing waters, bonded closely with a family who care and treasure them.</p>
+           </div>
+           <div class="card">
+             <img src="assets/images/successImg3.png" alt="Atlas" class="adopted-creatures">
+             <h4>Atlas Learns to Trust</h4>
+             <p>Brave little Atlas grows stronger each day, learning to trust and in a courage filled home with patience.</p>
+           </div>
+           <div class="card">
+             <img src="assets/images/successImg4.png" alt="Skye" class="adopted-creatures">
+             <h4>Skye's First Open Skies</h4>
+             <p>Skye's wings have stretched freely at last, soaring happily above a home where wonder is always welcome and curiosity is always a factor.</p>
+           </div>
+         </div>
+         <button class="btn-primary">Cradle a Legend</button>
+       </section>
+       <!-- Footer -->
+       <footer>
            <div class="container-split">
               <div class="footer-left">
                <img src="assets/images/logo.png" alt="Logo">
