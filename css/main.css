@@ -626,6 +626,7 @@ body {
 }
 
 .btn-primary-2  {
+    margin-left: 70%;
     text-decoration: none;
     background-color: var(--accent-yellow);
     color: var(--text-primary-white);
