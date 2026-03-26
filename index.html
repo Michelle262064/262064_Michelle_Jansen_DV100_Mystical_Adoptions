@@ -36,7 +36,7 @@
          <div class="search-cart">
            <input type="text" placeholder="Search">
                <div class="cart-container">
-                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                 <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
                  <span class="cart-amount">0</span>
                </div>
          </div>
@@ -54,11 +54,13 @@
      <!--Slider Section-->
      <section id="about" class="feature-dark">
        <div class="container split">
-           <div id="carouselExample" class="carousel slide">
+
+           <div id="carouselExample" class="carousel-slide">
              <div class="carousel-inner">
                <div class="carousel-item active">
                  <img src="assets/images/imageSlider1.png" class="d-block w-100" alt="...">
                </div>
+               
                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                  <span class="visually-hidden">Previous</span>
@@ -71,30 +73,31 @@
            </div>
          </div>
            <div class="content-column">
-              <p class="label">BEGIN YOUR JOURNEY</p>
+              <p1>BEGIN YOUR JOURNEY</p1>
               <h2>Tiny Legends</h2>
               <h2>Big Hearts</h2>
-              <p>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p>
-              <button type="btn-primary">Cradle a legend</button>
+              <p2>Begin your journey into legend: tiny dragons, shimmering pegasi, mischievous kitsune, and watchful basilisks are ready to meet their families. Delight in enchanted encounters, gentle care, and joyful playtime. Heartwarming bonds await as these legendary creatures find their forever homes.</p2>
+              <a href="pages/about.html" class="btn-primary" type="button">Cradle a legend</a>
           </div>
      </section>
+
      <!--Info Section-->
      <section class="info-section">
            <div class="container split reverse">
              <div class="image-box">
                <img src="assets/images/homeImg1.png" alt="Mythical Sanctuary">
              </div>
-             <div class="text-box">
-                <p class="label">THE CRADLE</p>
+             <div class="textbox">
+                <p>THE CRADLE</p>
                 <h2>A Sanctuary Where Mythical</h2>
                 <h2>Creatures Find Families</h2>
-                <p>Discover our carefully nurtured mythical creatures, each ready to join a loving family. Experience the joy and wonder of forming a long lasting bond, as every adoption is guided with care, ensuring a safe, ethical, adn heartwarming journey for both creature and caretaker.</p>
+                <p1>Discover our carefully nurtured mythical creatures, each ready to join a loving family. Experience the joy and wonder of forming a long lasting bond, as every adoption is guided with care, ensuring a safe, ethical, adn heartwarming journey for both creature and caretaker.</p1>
              </div>
            </div>
        </section>
        <!--Creature Cards-->
-       <section class="cards-section container">
-         <p class"label">LOOKING IN ON PAST FRIENDS</p>
+       <section class="cards-section-container">
+         <p class="label">LOOKING IN ON PAST FRIENDS</p>
          <h3>FROM CRADLE TO FAMILY: A</h3>
          <h3>LEGEND AT HOME</h3>
          <div class="text-footer-container">
@@ -119,7 +122,7 @@
              <p>Skye's wings have stretched freely at last, soaring happily above a home where wonder is always welcome and curiosity is always a factor.</p>
            </div>
          </div>
-         <button class="btn-primary">Cradle a Legend</button>
+         <a href="pages/about.html" class="btn-primary" type="button">Cradle a legend</a>
        </section>
        <!-- Footer -->
        <footer>
@@ -127,7 +130,6 @@
               <div class="footer-left">
                <img src="assets/images/logo.png" alt="Logo">
                <p>Where every legendary creature finds a loving home.</p>
-               <span>All Rights Reserved &Open Window 2024</span>
               </div>
            </div>
            <div class="footer-mid">
@@ -146,13 +148,20 @@
                        <img src="assets/images/sm4.png" alt="Twitter" class="social-icon">
                      </a>
                      <a href="https://www.instagram.com/openwindowinstitute/" target="_blank">
-                       <img src="assets/images/sm3.png" alt="Instagram" class="social-icons">
+                       <img src="assets/images/sm3.png" alt="Instagram" class="social-icon">
                      </a>
                      <a href="https://www.tiktok.com/@open_window_" target="_blank">
                        <img src="assets/images/sm2.png" alt="Tiktok" class="social-icon">
                      </a>
                    </div>
                </div>
+               <div class="footer-bottom">
+                   <span>All Rights Reserved &Open Window 2024</span>
+                   <div class="legal-links">
+                     <a href="#">Terms and Conditions</a>
+                     <a href="#">Privacy Policy</a>
+                   </div>
+                 </div>
        </footer>
     </body>
 </html>

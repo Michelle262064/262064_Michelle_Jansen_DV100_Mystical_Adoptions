@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <<meta charset="UTF-8">
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="IE-edge">
       <meta name="author" content="Michelle Jansen 262064">
@@ -12,33 +12,36 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
       
       <title>The Mythos Cradle</title>
-      
-      <link rel="stylesheet" href="../stylesheet/css/main.css">
-      <link rel="stylesheet" href="../assets/fonts/mythology_of_egypt/Mythology Of Egypt.ttf">
-   </head>
 
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="local-font" href="../assets/fonts/mythology_of_egypt/Mythology Of Egypt.ttf">
+   </head>
    <body class="adopt-page">
-     <!--Navigation-->
-     <nav class="navbar">
-         <a href="about.html" class="adopt-logo">
-           <img src="../assets/images/logo.png">
+     <header>
+        <!--Navigation-->
+        <div class="navbar">
+         <a href="about.html" class="logo">
+           <img src="../assets/images/logo.png" alt="Mythos Logo">
          </a>
-          <ul class="nav-links">
+         <nav class="nav-links">
            <a href="../index.html">Home</a>
-           <a href="about.html">About</a>
-           <a href="contact.html">Contact</a>
-         </ul>
+           <a href="about.html">Adopt</a>
+           <a href="contact.html">Contact Us</a>
+         </nav>
          <div class="search-cart">
            <input type="text" placeholder="Search">
                <div class="cart-container">
-                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                 <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
                  <span class="cart-amount">0</span>
                </div>
          </div>
-     </nav>
-    
+       </div>
+     </header>
+
      <!--Header-->
      <header class="adopt-hero">
        <h1>Adopt A Creature</h1>
@@ -50,31 +53,44 @@
      <!-- Mustard Filter Bar -->
      <div class="filter-bar">
           <div class="filter-left">
-             <span>🔍 Filter</span>
-             <span>田 Tiles</span>
+             <i class="filter-icon">🔍</i>
+             <span>Filter</span>
+             <i class="tile-icon">田 </i>
+             <span>Tiles</span>
              <div class="divider-line"></div>
-             <p>Showing 1-6 of 30 results</p>
+           </div>
+           <div class="center-section">
+             <span><p>Showing 1-6 of 30 results</p></span>
            </div>
            <div class="filter-right">
              <span>Show</span>
-             <div class="small-box">6</div>
+             <button class="btn-sp" type="button">6</button>
              <span>Sort by</span>
-             <select class="small-box"><option>Newest</option></select>
-           </div>
+             <select class="drop-down">
+               <option>Newest</option>
+               <option>Oldest</option>
+               <option>Popular</option>
+             </select>
+            </div>
        </div>   
        <!--Product Sections (Alternating)-->
-        <section class="product-page white">
-            <img src="assets/images/adopt1.png" class="product-image">
-            <div class="product-info">
-                <h2>Blue Dragon - Azuron</h2>
-                <p class="price">R2 500.00</p>
-                <div class="reviews">★★★</div>
-                <div class="review-line"></div>
-                <span>Friendly Ally</span>
-                <p>Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curlings up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around teh room.</p>
+        <section class="product-page-white">
+            <img src="../assets/images/adopt1.png" class="product-image">
+                <div class="product-info">
+                <h1>Blue Dragon - Azuron</h1>
+                <div class="price-container">
+                   <del class="old-price">R5000.00</del>
+                   <span class="current-price">R2500.00</span>
+                </div>
+                <div class="rating-row">
+                   <div class="reviews">★★★</div>
+                   <div class="review-line"></div>
+                   <span class="review-status">Friendly Ally</span>
+                </div>
+                <p class="p1">Azuron is a curious little dragon with a spark of mischief in his eyes. He loves exploring hidden nooks and curlings up in warm spots after a playful flight, leaving tiny trails of blue sparks wherever he goes. He thrives on attention and gentle play, and his favorite games involve chasing floating spark orbs around the room.</p>
                 <div class="qty-control">
                     <span class="qty-box">- 1 +</span>
-                    <button>Add to Cradle</button>
+                    <button class="b-btn">Add to Cradle</button>
                  </div>
                   <ul>
                      <li>Bed : Cozy lava-foam bed</li>
@@ -84,18 +100,21 @@
                    </ul>
                </div>
           </section>
-          <section class="product-page dark blue">
-             <img src="assets/images/adopt2.png" class="product-image">
-               <div class="product-info">
+
+          <section class="product-page-darkblue">
+             <img src="../assets/images/adopt2.png" class="product-image">
+               <div class="product-info-sp">
                  <h2>Kitsune - Yuki</h2>
-                 <p class="price">R4 500.00</p>
-                 <div class="reviews">★★★★</div>
-                 <div class="review-line"></div>
-                 <span>Gentle Guardian</span>
-                 <p>Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tail swishes with commitment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers</p>
-                 <div class="qty-control">
-                    <span class="qty-box">- 1 +</span>
-                    <button>Add T=to Cradle</button> 
+                 <h3 class="price-sp">R4 500.00</h3>
+                 <div class="rating-row">
+                   <div class="reviews">★★★</div>
+                   <div class="review-line"></div>
+                   <span class="review-status">Gentle Guardian</span>
+                </div>
+                 <p class="p2">Yuki is a mischievous yet loving fox spirit, full of curiosity and clever ideas. She delights in playful tricks and quietly watching over her friends, her tail swishes with commitment. Yuki especially enjoys interactive games and hiding small trinkets to surprise her caretakers</p>
+                 <div class="qty-control-sp">
+                    <span class="qty-box2">- 1 +</span>
+                    <button class="b-btn">Add to Cradle</button>
                   </div>
                   <ul>
                     <li>Bed : Silk-lined den bed</li>
@@ -105,18 +124,21 @@
                   </ul>
               </div>
            </section>
-           <section class="product-page white">
-             <img src="assets/images/adopt3.png" class="product-image">
+
+           <section class="product-page-white">
+             <img src="../assets/images/adopt3.png" class="product-image">
              <div class="product-info">
-               <h2>Griffin - Aurelia</h2>
+               <h1>Griffin - Aurelia</h1>
                <p class="price">R6 500.00</p>
-               <div class="reviews">★★★</div>
-               <div class="review-line"></div>
-               <span>Friendly Ally</span>
-               <p>Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those -she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off ner tiny but majestic wings.</p>
+               <div class="rating-row">
+                   <div class="reviews">★★★</div>
+                   <div class="review-line"></div>
+                   <span class="review-status">Friendly Ally</span>
+                </div>
+               <p class="p1">Aurelia is a proud little griffin, courageous yet gentle. She loves climbing, exploring high perches, and curling up near those -she trusts, always watching the world with wise golden eyes. She adores gentle games of chase and loves to show off ner tiny but majestic wings.</p>
                <div class="qty-control">
                   <span class="qty-box">- 1 +</span>
-                  <button>Add to Cradle</button>
+                  <button class="b-btn">Add to Cradle</button>
                </div>
                <ul>
                  <li>Bed : Feathered-lined perch bed</li>
@@ -126,18 +148,21 @@
                </ul>
              </div>
            </section>
-           <section class="product-page dark blue">
-               <img src="assets/images.adopt4.png" class="product-image">
-               <div class="product-info">
+
+           <section class="product-page-darkblue">
+               <img src="../assets/images/adopt4.png" class="product-image">
+               <div class="product-info-sp">
                    <h2>Water Wisp - Lumina</h2>
-                   <p class="price">R40 000.00</p>
-                   <div class="reviews">★★★★★</div>
-                   <div class="review-line"></div>
-                   <span>Beloved Companion</span>
-                   <p>Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and curious, she glides through her surroundings, bringing calm and quiet magic wherever she goes. She loves to follow gentle ripples in water or light games, leaving a taint glowing trail that enchants everyone nearby.</p>
-                   <div class="qty-control">
-                      <span class="qty-box">- 1 +</span>
-                      <button>Add to Cradle</button>
+                   <p class="price-sp">R40 000.00</p>
+                   <div class="rating-row">
+                      <div class="reviews">★★★</div>
+                      <div class="review-line"></div>
+                      <span class="review-status">Beloved Companion</span>
+                   </div>
+                   <p class="p2">Lumina drifts like a shimmer of moonlight, soft and gentle. Playful and curious, she glides through her surroundings, bringing calm and quiet magic wherever she goes. She loves to follow gentle ripples in water or light games, leaving a taint glowing trail that enchants everyone nearby.</p>
+                   <div class="qty-control-sp">
+                      <span class="qty-box2">- 1 +</span>
+                      <button class="b-btn">Add to Cradle</button>
                    </div>
                    <ul>
                       <li>Bed : Crystal bowl bed</li>
@@ -147,18 +172,21 @@
                    </ul>
                  </div>
              </section>
-             <section class="product-page white">
-             <img src="assets/images/adopt5.png" class="product-image">
+
+             <section class="product-page-white">
+             <img src="../assets/images/adopt5.png" class="product-image">
              <div class="product-info">
                <h2>Pegasus - Starwind</h2>
                <p class="price">R5 000.00</p>
-               <div class="reviews">★★★★</div>
-               <div class="review-line"></div>
-               <span>Gentle Guardian</span>
-               <p>Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to snow affection, quickly forming strong bonds with those he trusts.</p>
+               <div class="rating-row">
+                   <div class="reviews">★★★</div>
+                   <div class="review-line"></div>
+                   <span class="review-status">Gentle Guardian</span>
+                </div>
+               <p class="p1">Starwind is a gentle, curious Pegasus foal with a playful spirit. He loves short flights and sunny naps, his gleaming wings always ready for discovery. He enjoys small games of chase and nuzzles to snow affection, quickly forming strong bonds with those he trusts.</p>
                <div class="qty-control">
                   <span class="qty-box">- 1 +</span>
-                  <button>Add to Cradle</button>
+                  <button class="b-btn">Add to Cradle</button>
                </div>
                <ul>
                  <li>Bed : Soft cloud bed</li>
@@ -168,57 +196,68 @@
                </ul>
              </div>
            </section>
-           <section class="product-page dark blue">
-               <img src="assets/images/adopt6.png" class="product-image">
-               <div class="product-info">
+           <section class="product-page-darkblue">
+               <img src="../assets/images/adopt6.png" class="product-image">
+               <div class="product-info-sp">
                    <h2>Forest Spirit - Briar</h2>
-                   <p class="price">R3 500.00</p>
-                   <div class="reviews">★★★★★</div>
+                   <p class="price-sp">R3 500.00</p>
+                   <div class="rating-row">
+                   <div class="reviews">★★★</div>
                    <div class="review-line"></div>
-                   <span>Beloved Companion</span>
-                   <p>Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.</p>
-                   <div class="qty-control">
-                      <span class="qty-box">- 1 +</span>
-                      <button>Add to Cradle</button>
+                   <span class="review-status">Beloved Companion</span>
+                </div>
+                   <p class="p2">Briar is a tiny guardian of the woods, curious, gentle, and full of life. He loves leafy hideaways and quietly exploring gardens, always humming with a touch of magic. He enjoys collecting small natural treasures and bringing them to his caretakers as gifts, showing his playful personality.</p>
+                   <div class="qty-control-sp">
+                      <span class="qty-box2">- 1 +</span>
+                      <button class="b-btn">Add to Cradle</button>
                    </div>
-                   <ul>
+                   <ul class="db">
                       <li>Bed : Mossy bed</li>
                       <li>Treats : Berry treats</li>
                       <li>Toys : Twig rattles, Leaf dolls, Acorn balls</li>
                       <li>Unique Item : Mini Leafy Hideout</li>
                    </ul>
+                   <a href="../pages/contact.html" class="btn-primary-2" type="button">Cradle a legend</a>
                  </div>
              </section>
              <!-- Footer -->
              <footer>
+               <div class="container-split">
                  <div class="footer-left">
-                     <img src="assets/images/logo.png" alt="Logo">
-                     <p>Where every legendary creature finds a loving home.</p>
-                     <span>All Rights Reserved &Open Window 2024</span>
+                   <img src="../assets/images/logo.png" alt="Logo">
+                   <p>Where every legendary creature finds a loving home.</p>
+                 </div>
+               </div>
+               <div class="footer-mid">
+                 <h5>Company</h5>
+                 <a href="index.html">Home</a>
+                 <a href="pages/about.html">Adopt</a>
+                 <a href="pages/contact.html">Contact Us</a>
+               </div>
+               <div class="footer-right">
+                 <h6>Social Media Links</h6>
+                 <div class="social-container">
+                     <a href="https://www.facebook.com/theopenwindow/" target="_blank">
+                       <img src="../assets/images/sm1.png" alt="Facebook" class="social-icon">
+                     </a>
+                     <a href="https://x.com/open_window_" target="_blank">
+                       <img src="../assets/images/sm4.png" alt="Twitter" class="social-icon">
+                     </a>
+                     <a href="https://www.instagram.com/openwindowinstitute/" target="_blank">
+                       <img src="../assets/images/sm3.png" alt="Instagram" class="social-icon">
+                     </a>
+                     <a href="https://www.tiktok.com/@open_window_" target="_blank">
+                       <img src="../assets/images/sm2.png" alt="Tiktok" class="social-icon">
+                     </a>
                    </div>
-                   <div class="footer-mid">
-                       <h5>Company</h5>
-                       <a href="../index.html">Home</a>
-                       <a href="about.html">Adopt</a>
-                       <a href="contact.html">Contact Us</a>
-                     </div>
-                     <div class="footer-right">
-                         <h6>Social Media Links</h6>
-                         <class="social-container">
-                            <a href="https://www.facebook.com/theopenwindow/posts/on-friday-the-27th-of-february-open-window-stellenbosch-headed-into-the-city-for/1223841959923984/" target="_none">
-                              <img src="assets/images/sm1.png" alt="Facebook" class="social-icon">
-                           </a>
-                           <a href="https://www.facebook.com/theopenwindow/posts/on-friday-the-27th-of-february-open-window-stellenbosch-headed-into-the-city-for/1223841959923984/" target="_none">
-                              <img src="assets/images/sm4.png" alt="Twitter" class="social-icon">
-                           </a>
-                           <a href="https://www.instagram.com/openwindowinstitute/?hl=en" target="_none">
-                              <img src="assets/images/sm3.png" alt="Instagram" class="social-icons">
-                           </a>
-                           <a href="https://www.tiktok.com/@open_window_" target="_none">
-                             <img src="assets/images/sm2.png" alt="Tiktok" class="social-icon">
-                           </a>
-                         </class>
-                       </div>
-               </footer>
+               </div>
+               <div class="footer-bottom">
+                   <span>All Rights Reserved &Open Window 2024</span>
+                   <div class="legal-links">
+                     <a href="#">Terms and Conditions</a>
+                     <a href="#">Privacy Policy</a>
+                   </div>
+                 </div>
+       </footer>
    </body>
  </html>
